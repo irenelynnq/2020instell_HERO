@@ -10,6 +10,7 @@ const statHowToPlay = 1;
 const statPlaying = 2;
 const statEnd = 3;
 const statCredit = 4;
+const statCredit2 = 5;
 
 //choices
 let choiceList = [];
@@ -21,7 +22,7 @@ const ally2 = 4;
 
 //images
 let images = [];
-let imageCount = 167;
+let imageCount = 168;
 
 let messageBar;
 let nextButton;
@@ -29,6 +30,7 @@ let nameTags = [];
 let choiceButton;
 
 let endingCredit;
+let endingCredit2;
 let howToPlay;
 let mainCover;
 let endings = [];
@@ -129,7 +131,10 @@ function draw() {
       drawEnding(ending);
       break;
     case statCredit:
-      drawCredit();
+      drawCredit(1);
+      break;
+    case statCredit2:
+      drawCredit(2);
       break;
   }
 }
@@ -158,6 +163,11 @@ function keyPressed() {
       }
       break;
     case statCredit:
+      if (keyCode === ENTER) {
+        gameStat = statCredit2;
+      }
+      break;
+    case statCredit2:
       if (keyCode === ENTER) {
         restart();
       }
@@ -189,9 +199,14 @@ function drawHowToPlay() {
   image(howToPlay, 0, 0, 1280, 720);
 }
 
-function drawCredit() {
+function drawCredit(num) {
   imageMode(CORNER);
-  image(endingCredit, 0, 0, 1280, 720);
+  if (num == 1) {
+    image(endingCredit, 0, 0, 1280, 720);
+  } else if (num == 2){
+    image(endingCredit2, 0, 0, 1280, 720);
+  }
+
 }
 
 function restart() {
@@ -225,6 +240,7 @@ function preloadUI() {
 
 function preloadEtc() {
   endingCredit = loadImage('assets/ui/EndingCreditNoejeol.png');
+  endingCredit2 = loadImage('assets/ui/EndingCredit2.png');
   howToPlay = loadImage('assets/ui/HowToPlay.png');
   mainCover = loadImage('assets/ui/MainCover.png');
 

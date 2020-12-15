@@ -54,7 +54,7 @@ class Scene {
         imageMode(CENTER);
         image(choiceButton, 90, choice2Y);
       }
-      
+
       //타이머
       // let secLeft = 10 - countSec(timeStandard);
       // console.log("secLeft" + secLeft);
@@ -148,18 +148,18 @@ class Scene {
         if (nowScene.isBranch) {
           //타임 기준 설정
           timeStandard = millis();
-          console.log(timeStandard);
+          //console.log(timeStandard);
         }
       }
 
     }
   }
-  
+
   playSound(){
     this.playBgm();
     this.playSoundEffect();
   }
-  
+
   playBgm(){
     if (bgms[this.bgm] != currentBgm) {
       currentBgm.stop();
@@ -167,7 +167,7 @@ class Scene {
       currentBgm.loop();
     }
   }
-  
+
   playSoundEffect(){
     if (this.hasSoundEffect) {
       currentSoundEffect.stop();
