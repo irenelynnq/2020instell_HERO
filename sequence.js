@@ -69,7 +69,7 @@ class Sequence {
           sceneIndex -= 1;
           sequenceIndex = 1;
           nowSequence = sequences[sequenceLevel][sequenceIndex];
-          nowScene = nowSequence.getScene(sceneIndex); 
+          nowScene = nowSequence.getScene(sceneIndex);
           nowScene.playSound();
         }
       } else if (sceneIndex > 0) {
@@ -87,6 +87,25 @@ class Sequence {
           ending = nowScene.endType;
           currentBgm.stop();
           currentSoundEffect.stop();
+          switch (ending) {
+            case endSquareCircle:
+              currentBgm = bgms[9];
+              break;
+            case endSquare:
+              currentBgm = bgms[7];
+              break;
+            case endCircle:
+              currentBgm = bgms[9];
+              break;
+            case endTriangle:
+              currentBgm = bgms[8];
+              break;
+            case endFail:
+              currentBgm = bgms[6];
+              break;
+            default:
+          }
+          currentBgm.loop();
         }
       } else if (nowScene.isBranch) {
         //브랜치 선택

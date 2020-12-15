@@ -221,6 +221,8 @@ function restart() {
   sceneIndex = 0;
   nowChoice = true;
 
+  currentBgm.stop();
+
   nowSequence = sequences[sequenceLevel][sequenceIndex];
   console.log(nowSequence.getLevel());
   console.log(nowSequence.getIndex());
