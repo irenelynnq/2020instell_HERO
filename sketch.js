@@ -290,6 +290,7 @@ function preloadSound() {
   bgms[7] = loadSound('assets/sound/bgm/7NemoEnding.mp3');
   bgms[8] = loadSound('assets/sound/bgm/8SemoEnding.mp3');
   bgms[9] = loadSound('assets/sound/bgm/9CircleEnding.mp3');
+  bgms[10] = loadSound('assets/sound/bgm/10Tension2.mp3');
   soundEffects['Absorbing'] = loadSound('assets/sound/se/Absorbing.mp3');
   soundEffects['CircleMurmur'] = loadSound('assets/sound/se/CircleMurmur.mp3');
   soundEffects['Cheering'] = loadSound('assets/sound/se/Cheering.mp3');
