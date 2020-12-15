@@ -270,7 +270,7 @@ function loadSequence() {
 
 function loadScene() {
   for (let r = 0; r < sceneTable.getRowCount(); r++) {
-    
+
     let indexL = sceneTable.getNum(r, 1);
     let indexS = sceneTable.getNum(r, 2);
     //console.log(r + " " + indexL + " " + indexS);
@@ -285,6 +285,11 @@ function preloadSound() {
   bgms[2] = loadSound('assets/sound/bgm/2Tension.mp3');
   bgms[3] = loadSound('assets/sound/bgm/3Sad.mp3');
   bgms[4] = loadSound('assets/sound/bgm/4BackNormal.mp3');
+  bgms[5] = loadSound('assets/sound/bgm/5Searching.mp3');
+  bgms[6] = loadSound('assets/sound/bgm/6ChanceMan.mp3');
+  bgms[7] = loadSound('assets/sound/bgm/7NemoEnding.mp3');
+  bgms[8] = loadSound('assets/sound/bgm/8SemoEnding.mp3');
+  bgms[9] = loadSound('assets/sound/bgm/9CircleEnding.mp3');
   soundEffects['Absorbing'] = loadSound('assets/sound/se/Absorbing.mp3');
   soundEffects['CircleMurmur'] = loadSound('assets/sound/se/CircleMurmur.mp3');
   soundEffects['DoorClose'] = loadSound('assets/sound/se/DoorClose.mp3');
