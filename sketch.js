@@ -292,6 +292,7 @@ function preloadSound() {
   bgms[9] = loadSound('assets/sound/bgm/9CircleEnding.mp3');
   soundEffects['Absorbing'] = loadSound('assets/sound/se/Absorbing.mp3');
   soundEffects['CircleMurmur'] = loadSound('assets/sound/se/CircleMurmur.mp3');
+  soundEffects['Cheering'] = loadSound('assets/sound/se/Cheering.mp3');
   soundEffects['DoorClose'] = loadSound('assets/sound/se/DoorClose.mp3');
   soundEffects['DoorOpen'] = loadSound('assets/sound/se/DoorOpen.mp3');
   soundEffects['EnergyReturn'] = loadSound('assets/sound/se/EnergyReturn.mp3');
