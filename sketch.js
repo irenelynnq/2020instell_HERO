@@ -75,7 +75,7 @@ function preload() {
   preloadImages();
   preloadEtc();
   preloadSequenceData();
-  preloadSceneData();
+  //preloadSceneData();
   soundFormats('mp3', 'ogg');
   preloadSound();
 }
@@ -283,7 +283,7 @@ function loadSequence() {
     }
     sequences[level].push(new Sequence(sequenceTable.getNum(r, 0), sequenceTable.getNum(r, 1), sequenceTable.getNum(r, 2), sequenceTable.getNum(r, 3)));
   }
-
+  preloadSceneData();
 }
 
 function loadScene() {
