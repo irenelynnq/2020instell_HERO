@@ -291,7 +291,7 @@ function loadScene() {
 
     let indexL = sceneTable.getNum(r, 1);
     let indexS = sceneTable.getNum(r, 2);
-    //console.log(r + " " + indexL + " " + indexS);
+    console.log(r + " " + indexL + " " + indexS);
     sequences[indexL][indexS].put(new Scene(indexL, indexS, sceneTable.getNum(r, 3), sceneTable.getNum(r, 4), sceneTable.getNum(r, 5), sceneTable.getNum(r, 6), sceneTable.getNum(r, 7), sceneTable.getNum(r, 8), sceneTable.getNum(r, 9), sceneTable.getString(r, 10), sceneTable.getNum(r, 11), sceneTable.getString(r, 12), sceneTable.getString(r, 13), sceneTable.getString(r, 14), sceneTable.getString(r, 15)));
   }
 
