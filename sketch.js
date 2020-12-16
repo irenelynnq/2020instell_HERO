@@ -241,7 +241,7 @@ function preloadUI() {
 }
 
 function preloadEtc() {
-  endingCredit = loadImage('assets/ui/EndingCreditNoejeol.png');
+  endingCredit = loadImage('assets/ui/EndingCredit.png');
   endingCredit2 = loadImage('assets/ui/EndingCredit2.png');
   howToPlay = loadImage('assets/ui/HowToPlay.png');
   mainCover = loadImage('assets/ui/MainCover.png');
@@ -304,7 +304,7 @@ function preloadSound() {
   bgms[3] = loadSound('assets/sound/bgm/3Sad.mp3');
   bgms[4] = loadSound('assets/sound/bgm/4BackNormal.mp3');
   bgms[5] = loadSound('assets/sound/bgm/5Searching.mp3');
-  bgms[6] = loadSound('assets/sound/bgm/6ChanceMan.mp3');
+  bgms[6] = loadSound('assets/sound/bgm/6ChanceReal.mp3');
   bgms[7] = loadSound('assets/sound/bgm/7NemoEnding.mp3');
   bgms[8] = loadSound('assets/sound/bgm/8SemoEnding.mp3');
   bgms[9] = loadSound('assets/sound/bgm/9CircleEnding.mp3');
